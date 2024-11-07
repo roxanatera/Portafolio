@@ -1,0 +1,21 @@
+/* Aplica estos estilos a tu contenedor principal o App */
+body, html {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Footer siempre al final */
+footer {
+  margin-top: auto;
+}
+html {
+  scroll-behavior: smooth;
+}

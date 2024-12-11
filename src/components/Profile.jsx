@@ -1,7 +1,7 @@
 import React from 'react';
 import profileImage from '../assets/profile.jpg';
-import { FaReact, FaAngular, FaPython, FaPhp, FaHtml5, FaCss3Alt, FaJsSquare, FaGitAlt } from 'react-icons/fa';
-import { SiTypescript } from 'react-icons/si'; 
+import { FaReact, FaAngular, FaPython, FaPhp, FaHtml5, FaCss3Alt, FaJsSquare, FaGitAlt, FaDatabase } from 'react-icons/fa';
+import { SiTypescript, SiMongodb, SiMysql } from 'react-icons/si'; 
 
 function Profile() {
   return (
@@ -22,7 +22,7 @@ function Profile() {
       <div className="z-10">
         <h2 className="text-3xl font-bold text-gray-800 mt-4">Julia Natera</h2>
         <p className="text-lg text-gray-700 mt-2 max-w-md">
-          Desarrolladora web con conocimientos en PHP, JavaScript, TypeScript, React y Angular.
+          Desarrolladora web Junior con conocimientos en JavaScript, TypeScript, React, MongoDB, SQL.
           Apasionada por la programación y el desarrollo de soluciones creativas y eficientes.
         </p>
       </div>
@@ -32,18 +32,19 @@ function Profile() {
         <TechnologyIcon icon={FaReact} label="React" />
         <TechnologyIcon icon={FaAngular} label="Angular" />
         <TechnologyIcon icon={FaPython} label="Python" />
-        <TechnologyIcon icon={FaPhp} label="PHP" />
+        <TechnologyIcon icon={FaDatabase} label="Database" />
+        <TechnologyIcon icon={SiMongodb} label="MongoDB" />
+        <TechnologyIcon icon={SiMysql} label="SQL" />
+        {/* <TechnologyIcon icon={FaPhp} label="PHP" /> */}
         <TechnologyIcon icon={FaHtml5} label="HTML5" />
         <TechnologyIcon icon={FaCss3Alt} label="CSS3" />
         <TechnologyIcon icon={FaJsSquare} label="JavaScript" />
         <TechnologyIcon icon={SiTypescript} label="TypeScript" />
         <TechnologyIcon icon={FaGitAlt} label="Git" />
-         
       </div>
     </section>
   );
 }
-
 
 function TechnologyIcon({ icon: Icon, label }) {
   return (

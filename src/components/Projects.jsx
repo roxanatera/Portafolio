@@ -6,6 +6,9 @@ import vettrack from '../assets/vettrack.jpg';
 import coinforge from '../assets/coinforge.jpg';
 import barvana from '../assets/barvana.jpg';
 import landingpage from '../assets/landingpage.jpg';
+import landingpageshop from '../assets/landingpageshop.png'
+import weather from '../assets/weather.png'
+import swagger from '../assets/swagger.jpg'
 
 const projects = [
   { 
@@ -50,6 +53,29 @@ const projects = [
     link: 'https://landingpagmarketing.netlify.app/', 
     image: landingpage 
   },
+   {
+    id: 7,
+    title: 'Landin Page Shopstore',
+    description: 'Landing Page para una Empresa de Ropa.',
+    link: 'https://landingpagegaleria.netlify.app/',
+    image: landingpageshop 
+   },
+   {
+    id: 8,
+    title: 'Weather App',
+    description: 'Weather App, Aplicación del clima',
+    link: 'https://simpleclimaapp.netlify.app/',
+    image: weather 
+   },
+
+   {
+    id: 9,
+    title: 'Documentación Swagger',
+    description: 'Presenta un listado de endpoints disponibles, destinados a la gestión o incorporación de productos. Esta documentación sirve como punto central para que desarrolladores e integradores comprendan cómo interactuar con el backend.',
+    link: 'https://backend-addproduct.onrender.com/api-docs/#/',
+    image: swagger
+   },
+
 ];
 
 function Projects() {

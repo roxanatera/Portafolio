@@ -6,6 +6,10 @@ import vettrack from '../assets/vettrack.jpg';
 import coinforge from '../assets/coinforge.jpg';
 import barvana from '../assets/barvana.jpg';
 import landingpage from '../assets/landingpage.jpg';
+import landingpageshop from '../assets/landingpageshop.png'
+import weather from '../assets/weather.png'
+import swagger from '../assets/swagger.jpg'
+
 
 const projects = [
   { 
@@ -75,6 +79,42 @@ const projects = [
     Retos: Crear un diseño atractivo y de alta conversión, optimización de tiempos de carga y asegurar que la página sea completamente responsiva en dispositivos móviles.
     Mejoras Futuras: Integración de herramientas de análisis como Google Analytics para medir la efectividad de la página.`
   },
+
+  { 
+    id: 7, 
+    title: 'Landing Page Shopstore', 
+    description: 'He desarrollado una landing page interactiva enfocada en proporcionar una experiencia de usuario moderna y responsiva, Este proyecto destaca por su diseño limpio, funcionalidad dinámica y un enfoque en la experiencia del cliente.', 
+    link: 'https://landingpagegaleria.netlify.app/', 
+    image: landingpage,
+    details: `Tecnologías utilizadas:Frontend: React con TypeScript, Tailwind CSS
+      APIs Externas: Unsplash API para obtener imágenes dinámicas.
+      Gestión de datos: Hooks personalizados (useUnsplash) para manejo eficiente de datos.
+      Versionamiento: Git y GitHub.`
+  },
+  { 
+    id: 8, 
+    title: 'Weather App', 
+    description: ' Esta aplicación de clima permite a los usuarios buscar el clima actual y obtener el pronóstico de los próximos tres días para cualquier ciudad.', 
+    link: 'https://simpleclimaapp.netlify.app/', 
+    image: weather,
+    details:`Desarrollada con React para la estructura de componentes, 
+    TypeScript para tipado seguro y Tailwind CSS para un diseño responsivo y estilizado.`
+  },
+
+  { 
+    id: 9, 
+    title: 'Dcoumentación Swagger', 
+    description: 'La documentación Swagger implementada para la API de Product Admin App proporciona una forma interactiva y fácil de entender cómo funciona la API, qué endpoints están disponibles y cómo realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) sobre los productos en el catálogo. ', 
+    link: 'https://backend-addproduct.onrender.com/api-docs/#/', 
+    image: swagger,
+    details:`Los endpoints principales cubren las operaciones CRUD para la gestión de productos. Estos incluyen:
+    GET /api/products: Obtiene todos los productos disponibles en el sistema.
+    POST /api/products: Permite agregar un nuevo producto al catálogo.
+    GET /api/products/{id}: Recupera un producto específico mediante su ID.
+    PUT /api/products/{id}: Permite actualizar los detalles de un producto existente.
+    DELETE /api/products/{id}: Elimina un producto del catálogo utilizando su ID.`
+  },
+  
 ];
 
 function ProjectDetail() {

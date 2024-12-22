@@ -9,7 +9,7 @@ function Contact() {
         
         <div className="flex flex-col items-center space-y-4">
           {/* LinkedIn */}
-          <a href="www.linkedin.com/in/julia-roxana-natera-917b62172" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 transition-transform duration-300 hover:scale-105">
+          <a href="https://www.linkedin.com/in/julia-roxana-natera-917b62172/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 transition-transform duration-300 hover:scale-105">
             <FaLinkedin size={30} className="text-blue-600" />
             <span className="text-lg font-medium text-gray-700">LinkedIn</span>
           </a>

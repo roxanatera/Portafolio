@@ -32,7 +32,6 @@ function Profile() {
         <TechnologyIcon icon={FaReact} label="React" />
         <TechnologyIcon icon={FaAngular} label="Angular" />
         <TechnologyIcon icon={FaPython} label="Python" />
-        <TechnologyIcon icon={FaDatabase} label="Database" />
         <TechnologyIcon icon={SiMongodb} label="MongoDB" />
         <TechnologyIcon icon={SiMysql} label="SQL" />
         {/* <TechnologyIcon icon={FaPhp} label="PHP" /> */}

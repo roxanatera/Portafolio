@@ -21,9 +21,9 @@ function Contact() {
           </a>
 
           {/* Email */}
-          <a href="mailto:jrnt17@gmail.com" className="flex items-center space-x-3 transition-transform duration-300 hover:scale-105">
+          <a href="mailto:juliarnatera@gmail.com" className="flex items-center space-x-3 transition-transform duration-300 hover:scale-105">
             <FaEnvelope size={30} className="text-red-600" />
-            <span className="text-lg font-medium text-gray-700">jrnt17@gmail.com</span>
+            <span className="text-lg font-medium text-gray-700">juliarnatera@gmail.com</span>
           </a>
         </div>
       </div>

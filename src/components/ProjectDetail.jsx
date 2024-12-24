@@ -1,4 +1,3 @@
-import React from 'react';
 import { useParams } from 'react-router-dom';
 import easytipcalc from '../assets/easytipcalc.jpg';
 import calcount from '../assets/calcount.jpg';
@@ -6,7 +5,8 @@ import vettrack from '../assets/vettrack.jpg';
 import coinforge from '../assets/coinforge.jpg';
 import barvana from '../assets/barvana.jpg';
 import landingpage from '../assets/landingpage.jpg';
-import landingpageshop from '../assets/landingpageshop';
+import landingpageshop from "../assets/landingpageshop.png";
+;
 import weather from '../assets/weather.png';
 import swagger from '../assets/swagger.jpg'
 

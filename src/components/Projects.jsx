@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import easytipcalc from '../assets/easytipcalc.jpg';
 import calcount from '../assets/calcount.jpg';

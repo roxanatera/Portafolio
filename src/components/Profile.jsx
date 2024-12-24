@@ -1,6 +1,6 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import profileImage from '../assets/profile.jpg';
-import { FaReact, FaAngular, FaPython, FaPhp, FaHtml5, FaCss3Alt, FaJsSquare, FaGitAlt, FaDatabase } from 'react-icons/fa';
+import { FaReact, FaAngular, FaPython, FaHtml5, FaCss3Alt, FaJsSquare, FaGitAlt } from 'react-icons/fa';
 import { SiTypescript, SiMongodb, SiMysql } from 'react-icons/si'; 
 
 function Profile() {
@@ -22,7 +22,7 @@ function Profile() {
       <div className="z-10">
         <h2 className="text-3xl font-bold text-gray-800 mt-4">Julia Natera</h2>
         <p className="text-lg text-gray-700 mt-2 max-w-md">
-          Desarrolladora web Junior con conocimientos en JavaScript, TypeScript,  React, Spring Boot, Python, MongoDB, SQL.
+          Desarrolladora web Junior con conocimientos en JavaScript, TypeScript, React, Spring Boot, Python, MongoDB, SQL.
           Apasionada por la programación y el desarrollo de soluciones creativas y eficientes.
         </p>
       </div>
@@ -53,5 +53,10 @@ function TechnologyIcon({ icon: Icon, label }) {
     </div>
   );
 }
+
+TechnologyIcon.propTypes = {
+  icon: PropTypes.elementType.isRequired,
+  label: PropTypes.string.isRequired
+};
 
 export default Profile;

@@ -31,7 +31,7 @@ function Navbar() {
   // Función para cerrar el modal y redirigir a la descarga
   const handleConfirmDownload = () => {
     setIsModalOpen(false);
-    window.open("https://drive.google.com/file/d/1VlmKKr-q_29Mdp1RDya1KW4PyaGwleLt/view?usp=drive_link", "_blank");
+    window.open("https://drive.google.com/file/d/1buVWmRKAjKkaEji8Hk9jmoaNhSKdHQf6/view?usp=sharing", "_blank");
   };
 
   // Función para cerrar el modal sin descargar

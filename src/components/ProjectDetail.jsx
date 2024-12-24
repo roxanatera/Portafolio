@@ -6,7 +6,7 @@ import vettrack from '../assets/vettrack.jpg';
 import coinforge from '../assets/coinforge.jpg';
 import barvana from '../assets/barvana.jpg';
 import landingpage from '../assets/landingpage.jpg';
-import landingpageshop from '../assets/landingpageshop.png'
+import landingpageshop from '../assets/landingpageshop'
 import weather from '../assets/weather.png'
 import swagger from '../assets/swagger.jpg'
 
@@ -82,10 +82,10 @@ const projects = [
 
   { 
     id: 7, 
-    title: 'Landing Page Shopstore', 
+    title: 'Landing Page Shop', 
     description: 'He desarrollado una landing page interactiva enfocada en proporcionar una experiencia de usuario moderna y responsiva, Este proyecto destaca por su diseño limpio, funcionalidad dinámica y un enfoque en la experiencia del cliente.', 
     link: 'https://landingpagegaleria.netlify.app/', 
-    image: landingpage,
+    image: landingpageshop,
     details: `Tecnologías utilizadas:Frontend: React con TypeScript, Tailwind CSS
       APIs Externas: Unsplash API para obtener imágenes dinámicas.
       Gestión de datos: Hooks personalizados (useUnsplash) para manejo eficiente de datos.

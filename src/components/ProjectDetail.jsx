@@ -6,8 +6,8 @@ import vettrack from '../assets/vettrack.jpg';
 import coinforge from '../assets/coinforge.jpg';
 import barvana from '../assets/barvana.jpg';
 import landingpage from '../assets/landingpage.jpg';
-import landingpageshop from '../assets/landingpageshop'
-import weather from '../assets/weather.png'
+import landingpageshop from '../assets/landingpageshop';
+import weather from '../assets/weather.png';
 import swagger from '../assets/swagger.jpg'
 
 

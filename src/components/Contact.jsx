@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope, FaInstagram, FaTelegramPlane } from 'react-icons/fa'; // Asegúrate de importar FaTelegramPlane
 
 function Contact() {
   return (
@@ -23,7 +23,13 @@ function Contact() {
           {/* Email */}
           <a href="mailto:juliarnatera@gmail.com" className="flex items-center space-x-3 transition-transform duration-300 hover:scale-105">
             <FaEnvelope size={30} className="text-red-600" />
-            <span className="text-lg font-medium text-gray-700">juliarnatera@gmail.com</span>
+            <span className="text-lg font-medium text-gray-700">juliarnaterach@gmail.com</span>
+          </a>
+
+          {/* Telegram */}
+          <a href="https://t.me/jrnaterach" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 transition-transform duration-300 hover:scale-105">
+            <FaTelegramPlane size={30} className="text-blue-500" />
+            <span className="text-lg font-medium text-gray-700">Telegram</span>
           </a>
         </div>
       </div>

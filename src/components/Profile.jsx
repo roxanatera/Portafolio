@@ -22,7 +22,7 @@ function Profile() {
       <div className="z-10">
         <h2 className="text-3xl font-bold text-gray-800 mt-4">Julia Natera</h2>
         <p className="text-lg text-gray-700 mt-2 max-w-md">
-          Desarrolladora web Junior con conocimientos en JavaScript, TypeScript, React, Spring Boot, Python, MongoDB, SQL.
+          Desarrolladora web Junior con conocimientos en JavaScript, TypeScript, React, Golang, Python, MongoDB, SQL.
           Apasionada por la programación y el desarrollo de soluciones creativas y eficientes.
         </p>
       </div>

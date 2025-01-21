@@ -6,9 +6,10 @@ import coinforge from '../assets/coinforge.jpg';
 import barvana from '../assets/barvana.jpg';
 import landingpage from '../assets/landingpage.jpg';
 import landingpageshop from "../assets/landingpageshop.png";
-;
 import weather from '../assets/weather.png';
 import swagger from '../assets/swagger.jpg'
+import urls from '../assets/urls.png'
+import energy from '../assets/energy.png'
 
 
 const projects = [
@@ -114,6 +115,42 @@ const projects = [
     PUT /api/products/{id}: Permite actualizar los detalles de un producto existente.
     DELETE /api/products/{id}: Elimina un producto del catálogo utilizando su ID.`
   },
+  {
+      id: 10,
+      title: "Comprobador de Urls",
+      description:
+        "Este proyecto es una herramienta simple pero poderosa para verificar el estado HTTP de múltiples URLs. Incluye las siguientes características:\n✅ Verifica el estado HTTP de las URLs (códigos como 200, 404, etc.)\n📄 Exporta los resultados en JSON o PDF.\n🐳 Desplegable en cualquier entorno gracias a Docker.",
+      link: "",
+      image: urls,
+      details: `
+        Tecnologías: Golang, Fiber y Docker.
+        Funcionalidad: Herramienta para verificar el estado HTTP de URLs y exportar los resultados. Compatible con despliegues en Docker.
+        \n📦 Ejecuta mi proyecto directamente desde Docker con los siguientes comandos:
+        - docker pull roxnatera/check-url:latest
+        - docker run -p 3000:3000 roxnatera/check-url:latest
+  `},
+  { 
+    id: 11, 
+    title: 'Landing Page de Ofertas de Energía', 
+    description: ' Esta aplicación de clima permite a los usuarios buscar el clima actual y obtener el pronóstico de los próximos tres días para cualquier ciudad.', 
+    link: 'https://landingenergy.netlify.app/', 
+    image: energy,
+    details:`Golang: Utilizado para el backend, incluyendo el framework Fiber para gestionar rutas y plantillas.
+SCSS: Para estilos personalizados y modularidad en el diseño.
+HTML5: Estructura de las plantillas.
+-𝗘𝗻𝗹𝗮𝗰𝗲 𝗮𝗹 𝗣𝗿𝗼𝘆𝗲𝗰𝘁𝗼:
+https://lnkd.in/dm_A7Cgq
+Enlace al repositorio:
+https://lnkd.in/dr4xxSEW 👍 
+-𝐃𝐨𝐜𝐤𝐞𝐫
+𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝗶𝗼 𝗱𝗲 𝗗𝗼𝗰𝗸𝗲𝗿 𝗛𝘂𝗯:
+Puedes descargar la imagen con el siguiente comando:
+docker run -d -p 3000:3000 roxnatera/landing-energy-app:latest
+𝗘𝗷𝗲𝗰𝘂𝘁𝗮 𝗹𝗮 𝗮𝗽𝗹𝗶𝗰𝗮𝗰𝗶𝗼́𝗻 𝗲𝗻 𝘀𝗲𝗴𝘂𝗻𝗱𝗼𝘀:
+docker run -d -p 3000:3000 roxnatera/landing-energy-app:latest`
+  },
+
+  
   
 ];
 
@@ -127,7 +164,7 @@ function ProjectDetail() {
 
   return (
     <section className="flex flex-col items-center p-8 bg-gray-100">
-      <div className="bg-white p-6 rounded border-2 border-gray-200 shadow-lg max-w-2xl w-full transition-all duration-300 hover:border-blue-500">
+      <div className="bg-white p-6 rounded border-2 border-gray-100 shadow-lg max-w-2xl w-full transition-all duration-300 hover:border-blue-500">
         
         {/* Imagen del Proyecto */}
         <img 

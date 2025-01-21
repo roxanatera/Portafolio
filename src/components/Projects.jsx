@@ -8,6 +8,8 @@ import landingpage from '../assets/landingpage.jpg';
 import landingpageshop from '../assets/landingpageshop.png'
 import weather from '../assets/weather.png'
 import swagger from '../assets/swagger.jpg'
+import urls from '../assets/urls.png'
+import energy from '../assets/energy.png'
 
 const projects = [
   { 
@@ -74,6 +76,21 @@ const projects = [
     link: 'https://backend-addproduct.onrender.com/api-docs/#/',
     image: swagger
    },
+   {
+    id: 10,
+    title: "UrlsChecker ",
+    description:
+      "herramienta simple pero poderosa para verificar el estado HTTP de múltiples URLs.",
+    image: urls
+  },
+  {
+    id: 11,
+    title: "Landing Page Energy",
+    description:
+      "Este es mi primer proyecto desarrollado con Golang para el backend y SCSS para los estilos, diseñado para mostrar las mejores ofertas de energía de manera visual, atractiva y profesional. ",
+    image: energy
+  },
+  
 
 ];
 
@@ -91,7 +108,7 @@ function Projects() {
         {projects.map((project) => (
           <div 
             key={project.id} 
-            className="relative bg-white p-6 rounded border-2 border-gray-200 transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-blue-500 cursor-pointer"
+            className="relative bg-white p-6 rounded border-2 border-gray-100 transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-blue-500 cursor-pointer"
             onClick={() => handleProjectClick(project.id)}
           >
             <img

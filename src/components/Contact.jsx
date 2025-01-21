@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGithub, FaEnvelope, FaInstagram, FaTelegramPlane } from 'react-icons/fa'; // Asegúrate de importar FaTelegramPlane
+import { FaLinkedin, FaGithub, FaEnvelope, FaTelegramPlane } from 'react-icons/fa'; 
 
 function Contact() {
   return (

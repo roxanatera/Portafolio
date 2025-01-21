@@ -1,15 +1,15 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { FaTimes } from 'react-icons/fa'; // Importa el icono de cierre para el modal
+import { FaTimes } from 'react-icons/fa';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false); // Estado para el modal
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
   const navRef = useRef();
 
-  // Función para manejar clic en las secciones y redirigir si es necesario
+  
   const handleNavClick = (sectionId) => {
     if (location.pathname !== '/') {
       navigate('/');
@@ -22,24 +22,24 @@ function Navbar() {
     setIsOpen(false);
   };
 
-  // Función para manejar la apertura del modal de descarga
+ 
   const handleDownloadClick = (event) => {
     event.preventDefault();
     setIsModalOpen(true);
   };
 
-  // Función para cerrar el modal y redirigir a la descarga
+  
   const handleConfirmDownload = () => {
     setIsModalOpen(false);
     window.open("https://drive.google.com/file/d/1RUH19XcM8AiFB4xSK7-ItO2wAaJIQxyT/view?usp=drive_link", "_blank");
   };
 
-  // Función para cerrar el modal sin descargar
+ 
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
 
-  // Cierra el menú si se hace clic fuera de él
+  
   const handleClickOutside = (event) => {
     if (navRef.current && !navRef.current.contains(event.target)) {
       setIsOpen(false);

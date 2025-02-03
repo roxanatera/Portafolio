@@ -1,13 +1,12 @@
 import  { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import profileImage from '../assets/profile.jpg';
-import { FaReact, FaAngular, FaPython, FaHtml5, FaCss3Alt, FaJsSquare, FaGitAlt } from 'react-icons/fa';
+import { FaReact, FaPython, FaHtml5, FaCss3Alt, FaJsSquare, FaGitAlt } from 'react-icons/fa';
 import { SiTypescript, SiMongodb, SiMysql } from 'react-icons/si';
 
 function Profile() {
   const technologies = [
     { icon: FaReact, label: "React" },
-    { icon: FaAngular, label: "Angular" },
     { icon: FaPython, label: "Python" },
     { icon: SiMongodb, label: "MongoDB" },
     { icon: SiMysql, label: "SQL" },

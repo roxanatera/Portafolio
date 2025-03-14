@@ -10,148 +10,161 @@ import weather from '../assets/weather.png';
 import swagger from '../assets/swagger.jpg'
 import urls from '../assets/urls.png'
 import energy from '../assets/energy.png'
+import wordpress from '../assets/word2.png';
 
 
 const projects = [
-  { 
-    id: 1, 
-    title: 'Easy Tip Calculator', 
-    description: 'Calculadora de propinas rápida y sencilla. Este proyecto permite calcular fácilmente la propina basada en el porcentaje deseado y el total de la cuenta.', 
-    link: 'https://easytipcalc-3622f8.netlify.app/', 
+  {
+    id: 1,
+    title: 'revifitApp',
+    description: 'Este es un tema personalizado de WordPress desarrollado para el gimnasio ReviveFit. El tema está diseñado para ser ligero, responsive y fácil de personalizar.',
+    link: 'https://dev-revivefitapp.pantheonsite.io/',
+    image: wordpress,
+    details: `
+      Tecnologías utilizadas: WordPress, PHP, Advanced Custom Fields, consultas WP_Query.
+    `,
+  },
+  {
+    id: 2,
+    title: 'Easy Tip Calculator',
+    description: 'Calculadora de propinas rápida y sencilla. Este proyecto permite calcular fácilmente la propina basada en el porcentaje deseado y el total de la cuenta.',
+    link: 'https://easytipcalc-3622f8.netlify.app/',
     image: easytipcalc,
     details: `
       Tecnologías: React, CSS, React Hooks.
       Easy Tip Calculator permite a los usuarios calcular el porcentaje de propina sobre el total de la cuenta.
       Retos: Precisión en cálculos, interactividad en tiempo real, diseño responsivo.
       Mejoras Futuras: Conversión de monedas, opciones de preajustes de propina.
-    ` 
-  },
-  { 
-    id: 2, 
-    title: 'Cal-Count+', 
-    description: 'Aplicación para contar calorías diarias de manera efectiva y monitorear la ingesta de nutrientes.', 
-    link: 'https://cal-countf7283.netlify.app/', 
-    image: calcount,
-    details: `-tecnologias usadas: React, Vite, TypeScript, hook useReducer, Talwindcss
-     Aplicación de monitoreo calórico diseñada para ofrecer un seguimiento diario de la ingesta nutricional del usuario, Podemos agregar calorías que consumimos o calorías que quemamos en base a ciertas actividades Tenemos dos categorías comida o ejercicio.
-    Las comidas aumentan las calorías y el ejercicio las quema.Y al final tenemos una diferencia de si consumimos más calorías de las que quemamos o al final si tenemos un déficit calórico.`
-  },
-  { 
-    id: 3, 
-    title: 'VetTrack', 
-    description: 'Sistema de gestión de datos de pacientes para clínicas veterinarias.', 
-    link: 'https://vet-track4dce34.netlify.app/', 
-    image: vettrack,
-    details: `Tecnologias usadas: React, Ts, React Hook Form, Zustand, Taldwind 
-    Sistema completo de gestión veterinaria que permite a los veterinarios registrar y hacer seguimiento de sus pacientes y consultas médicas.`
-  },
-  { 
-    id: 4, 
-    title: 'CoinForge', 
-    description: 'Aplicación para consultar precios de criptomonedas en tiempo real, ideal para entusiastas del mercado de criptomonedas.', 
-    link: 'https://coinforge59b6d6.netlify.app/', 
-    image: coinforge,
-    details: `Tecnologias usadas: React, Ts, Cripto App con Zod y Zustand. 
-    Aplicación de consulta de precios en tiempo real de criptomonedas con actualización constante.`
-  },
-  { 
-    id: 5, 
-    title: 'Barvana API', 
-    description: 'API para la gestión de datos de bares y restaurantes, facilitando el acceso y control de información de inventario y clientes.', 
-    link: 'https://barvana-api.netlify.app/', 
-    image: barvana,
-    details: `-Tecnologías Utilizadas:
-      API, Vite, TS, React Router, Talwind, Zustand, Zod
-    -Funcionalidad de la Aplicación
-    Buscar Bebidas: Permite buscar bebidas por nombre o tipo y devuelve información detallada, incluyendo una lista de ingredientes.
-    -Gestión de Inventario: Los bares pueden llevar un registro de los ingredientes disponibles y de las bebidas que pueden preparar con esos ingredientes.
-    -Control de Recetas: La API permite acceder a recetas detalladas y a las proporciones necesarias de cada ingrediente, lo cual ayuda a los bartenders a preparar bebidas de forma estandarizada.
-    -Retos Enfrentados
-    Integración de la API Externa: Configurar y optimizar la integración con la Cocktail DB API o una API similar fue un desafío, especialmente para manejar tiempos de respuesta rápidos y asegurar que los datos fueran actualizados y precisos.`
-  },
-  { 
-    id: 6, 
-    title: 'Landing Page Marketing', 
-    description: 'Landing page para una agencia de marketing, diseñada para atraer y convertir clientes potenciales.', 
-    link: 'https://landingpagmarketing.netlify.app/', 
-    image: landingpage,
-    details: `Tecnologías: React, Tailwind CSS.
-    Funcionalidad: Página de aterrizaje diseñada para captar clientes interesados en los servicios de una agencia de marketing digital. 
-    Retos: Crear un diseño atractivo y de alta conversión, optimización de tiempos de carga y asegurar que la página sea completamente responsiva en dispositivos móviles.
-    Mejoras Futuras: Integración de herramientas de análisis como Google Analytics para medir la efectividad de la página.`
-  },
-
-  { 
-    id: 7, 
-    title: 'Landing Page Shop', 
-    description: 'He desarrollado una landing page interactiva enfocada en proporcionar una experiencia de usuario moderna y responsiva, Este proyecto destaca por su diseño limpio, funcionalidad dinámica y un enfoque en la experiencia del cliente.', 
-    link: 'https://landingpagegaleria.netlify.app/', 
-    image: landingpageshop,
-    details: `Tecnologías utilizadas:Frontend: React con TypeScript, Tailwind CSS
-      APIs Externas: Unsplash API para obtener imágenes dinámicas.
-      Gestión de datos: Hooks personalizados (useUnsplash) para manejo eficiente de datos.
-      Versionamiento: Git y GitHub.`
-  },
-  { 
-    id: 8, 
-    title: 'Weather App', 
-    description: ' Esta aplicación de clima permite a los usuarios buscar el clima actual y obtener el pronóstico de los próximos tres días para cualquier ciudad.', 
-    link: 'https://simpleclimaapp.netlify.app/', 
-    image: weather,
-    details:`Desarrollada con React para la estructura de componentes, 
-    TypeScript para tipado seguro y Tailwind CSS para un diseño responsivo y estilizado.`
-  },
-
-  { 
-    id: 9, 
-    title: 'Dcoumentación Swagger', 
-    description: 'La documentación Swagger implementada para la API de Product Admin App proporciona una forma interactiva y fácil de entender cómo funciona la API, qué endpoints están disponibles y cómo realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) sobre los productos en el catálogo. ', 
-    link: 'https://backend-addproduct.onrender.com/api-docs/#/', 
-    image: swagger,
-    details:`Los endpoints principales cubren las operaciones CRUD para la gestión de productos. Estos incluyen:
-    GET /api/products: Obtiene todos los productos disponibles en el sistema.
-    POST /api/products: Permite agregar un nuevo producto al catálogo.
-    GET /api/products/{id}: Recupera un producto específico mediante su ID.
-    PUT /api/products/{id}: Permite actualizar los detalles de un producto existente.
-    DELETE /api/products/{id}: Elimina un producto del catálogo utilizando su ID.`
+    `,
   },
   {
-      id: 10,
-      title: "Comprobador de Urls",
-      description:
-        "Este proyecto es una herramienta simple pero poderosa para verificar el estado HTTP de múltiples URLs. Incluye las siguientes características:\n✅ Verifica el estado HTTP de las URLs (códigos como 200, 404, etc.)\n📄 Exporta los resultados en JSON o PDF.\n🐳 Desplegable en cualquier entorno gracias a Docker.",
-      link: "",
-      image: urls,
-      details: `
-        Tecnologías: Golang, Fiber y Docker.
-        Funcionalidad: Herramienta para verificar el estado HTTP de URLs y exportar los resultados. Compatible con despliegues en Docker.
-        \n📦 Ejecuta mi proyecto directamente desde Docker con los siguientes comandos:
-        - docker pull roxnatera/check-url:latest
-        - docker run -p 3000:3000 roxnatera/check-url:latest
-  `},
-  { 
-    id: 11, 
-    title: 'Landing Page de Ofertas de Energía', 
-    description: ' Esta aplicación de clima permite a los usuarios buscar el clima actual y obtener el pronóstico de los próximos tres días para cualquier ciudad.', 
-    link: 'https://landingenergy.netlify.app/', 
-    image: energy,
-    details:`Golang: Utilizado para el backend, incluyendo el framework Fiber para gestionar rutas y plantillas.
-SCSS: Para estilos personalizados y modularidad en el diseño.
-HTML5: Estructura de las plantillas.
--𝗘𝗻𝗹𝗮𝗰𝗲 𝗮𝗹 𝗣𝗿𝗼𝘆𝗲𝗰𝘁𝗼:
-https://lnkd.in/dm_A7Cgq
-Enlace al repositorio:
-https://lnkd.in/dr4xxSEW 👍 
--𝐃𝐨𝐜𝐤𝐞𝐫
-𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝗶𝗼 𝗱𝗲 𝗗𝗼𝗰𝗸𝗲𝗿 𝗛𝘂𝗯:
-Puedes descargar la imagen con el siguiente comando:
-docker run -d -p 3000:3000 roxnatera/landing-energy-app:latest
-𝗘𝗷𝗲𝗰𝘂𝘁𝗮 𝗹𝗮 𝗮𝗽𝗹𝗶𝗰𝗮𝗰𝗶𝗼́𝗻 𝗲𝗻 𝘀𝗲𝗴𝘂𝗻𝗱𝗼𝘀:
-docker run -d -p 3000:3000 roxnatera/landing-energy-app:latest`
+    id: 3,
+    title: 'Cal-Count+',
+    description: 'Aplicación para contar calorías diarias de manera efectiva y monitorear la ingesta de nutrientes.',
+    link: 'https://cal-countf7283.netlify.app/',
+    image: calcount,
+    details: `
+      Tecnologías: React, Vite, TypeScript, hook useReducer, Tailwind CSS.
+      Aplicación de monitoreo calórico diseñada para ofrecer un seguimiento diario de la ingesta nutricional del usuario.
+    `,
   },
+  {
+    id: 4,
+    title: 'VetTrack',
+    description: 'Sistema de gestión de datos de pacientes para clínicas veterinarias.',
+    link: 'https://vet-track.netlify.app/',
+    image: vettrack,
+    details: `
+      Tecnologías: React, TypeScript, React Hook Form, Zustand, Tailwind CSS.
+      Sistema completo de gestión veterinaria que permite a los veterinarios registrar y hacer seguimiento de sus pacientes y consultas médicas.
+    `,
+  },
+  {
+    id: 5,
+    title: 'CoinForge',
+    description: 'Aplicación para consultar precios de criptomonedas en tiempo real, ideal para entusiastas del mercado de criptomonedas.',
+    link: 'https://coinforge59b6d6.netlify.app/',
+    image: coinforge,
+    details: `
+      Tecnologías: React, TypeScript, Zod, Zustand.
+      Aplicación de consulta de precios en tiempo real de criptomonedas con actualización constante.
+    `,
+  },
+  {
+    id: 6,
+    title: 'Barvana API',
+    description: 'API para la gestión de datos de bares y restaurantes, facilitando el acceso y control de información de inventario y clientes.',
+    link: 'https://barvana-api.netlify.app/',
+    image: barvana,
+    details: `
+      Tecnologías: API, Vite, TypeScript, React Router, Tailwind CSS, Zustand, Zod.
+      Funcionalidad: Búsqueda de bebidas, gestión de inventario y control de recetas con integración de API externa.
+    `,
+  },
+  {
+    id: 7,
+    title: 'Landing Page Marketing',
+    description: 'Landing page para agencia de marketing, diseñada para atraer y convertir clientes potenciales.',
+    link: 'https://landingpagmarketing.netlify.app/',
+    image: landingpage,
+    details: `
+      Tecnologías: React, Tailwind CSS.
+      Funcionalidad: Página de aterrizaje diseñada para captar clientes interesados en los servicios de una agencia de marketing digital.
+    `,
+  },
+  {
+    id: 8,
+    title: 'Landing Page Shopstore',
+    description: 'Landing Page para una Empresa de Ropa.',
+    link: 'https://landingpagegaleria.netlify.app/',
+    image: landingpageshop,
+    details: `
+      Tecnologías: React con TypeScript, Tailwind CSS, Unsplash API.
+      Página interactiva diseñada para proporcionar una experiencia de usuario moderna y responsiva.
+    `,
+  },
+  {
+    id: 9,
+    title: 'Weather App',
+    description: 'Aplicación del clima que permite consultar el clima actual y un pronóstico extendido.',
+    link: 'https://simpleclimaapp.netlify.app/',
+    image: weather,
+    details: `
+      Tecnologías: React, TypeScript, Tailwind CSS.
+      Funcionalidad: Consulta del clima actual y pronósticos futuros para cualquier ubicación.
+    `,
+  },
+  {
+    id: 10,
+    title: 'Documentación Swagger',
+    description: 'Documentación interactiva para una API de gestión de productos, mostrando cómo interactuar con los endpoints.',
+    link: 'https://backend-addproduct.onrender.com/api-docs/#/',
+    image: swagger,
+    details: `
+      Tecnologías: Swagger, Node.js.
+      Funcionalidad: Documentación detallada de endpoints CRUD para la gestión de productos en un sistema de inventario.
+    `,
+  },
+  {
+    id: 11,
+    title: 'Comprobador de Urls',
+    description: 'Este proyecto es una herramienta simple pero poderosa para verificar el estado HTTP de múltiples URLs.',
+    link: '',
+    image: urls,
+    details: `
+      Tecnologías: Golang, Fiber y Docker.
+      Funcionalidad: Herramienta para verificar el estado HTTP de URLs y exportar los resultados. Compatible con despliegues en Docker.
 
-  
-  
+      📦 Ejecuta mi proyecto directamente desde Docker con los siguientes comandos:
+      - docker pull roxnatera/check-url:latest
+      - docker run -p 3000:3000 roxnatera/check-url:latest
+    `,
+  },
+  {
+    id: 12,
+    title: 'Landing Page de Ofertas de Energía',
+    description: 'Esta aplicación permite a los usuarios buscar el clima actual y obtener el pronóstico de los próximos tres días para cualquier ciudad.',
+    link: 'https://landingenergy.netlify.app/',
+    image: energy,
+    details: `
+      Tecnologías:
+      - Golang: Utilizado para el backend, incluyendo el framework Fiber para gestionar rutas y plantillas.
+      - SCSS: Para estilos personalizados y modularidad en el diseño.
+      - HTML5: Estructura de las plantillas.
+
+      🔗 Enlace al Proyecto:
+      https://lnkd.in/dm_A7Cgq
+
+      🔗 Enlace al Repositorio:
+      https://lnkd.in/dr4xxSEW 👍 
+
+      🐳 Docker:
+      - Puedes descargar la imagen con el siguiente comando:
+        docker pull roxnatera/landing-energy-app:latest
+      - Ejecuta la aplicación en segundos:
+        docker run -d -p 3000:3000 roxnatera/landing-energy-app:latest
+    `,
+  },
 ];
 
 function ProjectDetail() {

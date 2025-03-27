@@ -31,7 +31,7 @@ function Navbar() {
   
   const handleConfirmDownload = () => {
     setIsModalOpen(false);
-    window.open("https://drive.google.com/file/d/1-6PNULMM1UGwnHXJE5oicFqf3l6t_KQ9/view?usp=drive_link", "_blank");
+    window.open("https://drive.google.com/file/d/1cFJv8GBpNdpjgpPO3iR1t2_u5EplpTaW/view?usp=drive_link", "_blank");
   };
 
  
